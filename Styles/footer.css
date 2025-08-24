@@ -123,6 +123,12 @@ font-family: "Roboto Slab", serif;
         justify-content: center;
     }
 }
+@media (max-width: 900px) {
+    .footer-col-4 input, .footer-col-4 button {
+        width: 100%;
+        max-width: 100%;
+    }
+}
 
 /* Mobile */
 @media (max-width: 600px) {
