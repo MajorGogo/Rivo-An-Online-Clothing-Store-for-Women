@@ -30,7 +30,7 @@
             <div class="navbar">
                 <p class="logo">Rivo</p>
                 <nav>
-                    <ul>
+                    <ul id="menuItems">
                         <li><a href="">HOME</a></li>
                         <li><a href="">SHOP</a></li>
                         <li><a href="">FEATURES</a></li>
@@ -38,6 +38,7 @@
                     </ul>
                 </nav>
                     <img src="images/cart-img.png" width="40px" height="40px">
+                    <img class="menu-icon" onclick="menuToggle()" src="images/menu.png">
                     <button class="login-btn">LOGIN</button>
             </div>
             <div class="row">
@@ -238,6 +239,22 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    var menuItems=document.getElementById('menuItems');
+    menuItems.style.maxHeight='0px';
+    function menuToggle(){
+        if(menuItems.style.maxHeight==='0px'){
+        menuItems.style.maxHeight= '225px';
+        menuItems.style.background='#C2EFD4';
+        }
+        else{
+        menuItems.style.maxHeight='0px';
+        }
+    }
+    
+</script>
      
     
 </body>
