@@ -37,9 +37,9 @@
                         <li><a href="">CONTACT</a></li>
                     </ul>
                 </nav>
-                    <img src="images/cart-img.png" width="40px" height="40px">
-                    <img class="menu-icon" onclick="menuToggle()" src="images/menu.png">
+                    <img class="cart-img" src="images/cart-img.png" width="40px" height="40px">
                     <button class="login-btn">LOGIN</button>
+                    <img class="menu-icon" onclick="menuToggle()" src="images/menu.png">
             </div>
             <div class="row">
                 <div class="col-2">
@@ -242,19 +242,11 @@
 
 
 <script>
-    var menuItems=document.getElementById('menuItems');
-    menuItems.style.maxHeight='0px';
-    function menuToggle(){
-        if(menuItems.style.maxHeight==='0px'){
-        menuItems.style.maxHeight= '225px';
-        menuItems.style.background='#C2EFD4';
-        }
-        else{
-        menuItems.style.maxHeight='0px';
-        }
-    }
-    
+function menuToggle(){
+    document.getElementById("menuItems").classList.toggle("active");
+}
 </script>
+
      
     
 </body>
